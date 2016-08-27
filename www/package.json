@@ -1,5 +1,5 @@
-{ "name": "υπολογισμοςμοριων",
-  "description": "υπολογισμοςμοριων",
+{ "name": "ypologismosmoriwn",
+  "description": "ypologismosmoriwn",
   "main": "ypologismos_moriwn.js",
   "dependencies": {
     "tabris": "^1.9.0"
