@@ -1,0 +1,7 @@
+{ "name": "υπολογισμοςμοριων",
+  "description": "υπολογισμοςμοριων",
+  "main": "ypologismos_moriwn.js",
+  "dependencies": {
+    "tabris": "^1.9.0"
+  }
+}
