@@ -367,8 +367,8 @@ console.log(op);
           }else if(!(b_e2===def)){
             top = 378;
             eid = " με ειδικό μάθημα: ";
-            moria1 = moria1 + b_e1*200;
-            moria2 = moria2 + b_e1*200;
+            moria1 = moria1 + b_e2*200;
+            moria2 = moria2 + b_e2*200;
           };
 
           message1 = new tabris.TextView ({
