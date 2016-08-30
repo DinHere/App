@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget
     id="com.din.ypologismos_moriwn"
-    version="1.0.5"
+    version="1.1.0"
     xmlns:gap="http://phonegap.com/ns/1.0"
     xmlns="http://www.w3.org/ns/widgets"
     xmlns:cdv="http://cordova.apache.org/ns/1.0">
@@ -20,12 +20,12 @@
     <preference name="EnableDeveloperConsole" value="false"/>
 
     <platform name="android">
-    <icon src="res/android/iconred.png" density="ldpi" />
-    <icon src="res/android/iconred.png" density="mdpi" />
-    <icon src="res/android/iconred.png" density="hdpi" />
-    <icon src="res/android/iconred.png" density="xhdpi" />
-    <icon src="res/android/iconred.png" density="xxhdpi" />
-    <icon src="res/android/iconred.png" density="xxxhdpi" />
+    <icon src="res/android/icon.png" density="ldpi" />
+    <icon src="res/android/icon.png" density="mdpi" />
+    <icon src="res/android/icon.png" density="hdpi" />
+    <icon src="res/android/icon.png" density="xhdpi" />
+    <icon src="res/android/icon.png" density="xxhdpi" />
+    <icon src="res/android/icon.png" density="xxxhdpi" />
   </platform>
 
 </widget>
