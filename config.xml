@@ -5,7 +5,7 @@
     xmlns:gap="http://phonegap.com/ns/1.0"
     xmlns="http://www.w3.org/ns/widgets"
     xmlns:cdv="http://cordova.apache.org/ns/1.0">
-
+    <icon src="eik.jpg" density="mdpi" />
     <name>Υπολογισμός Μορίων Πανελλήνιες 2016-2017</name>
     <description>
         Μία γρήγορη και εύκολη στην χρήση εφαρμογή
