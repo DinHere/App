@@ -20,12 +20,12 @@
     <preference name="EnableDeveloperConsole" value="false"/>
 
     <platform name="android">
-    <icon src="res/android/ic.png" density="ldpi" />
-    <icon src="res/android/ic.png" density="mdpi" />
-    <icon src="res/android/ic.png" density="hdpi" />
-    <icon src="res/android/ic.png" density="xhdpi" />
-    <icon src="res/android/ic.png" density="xxhdpi" />
-    <icon src="res/android/ic.png" density="xxxhdpi" />
+    <icon src="res/android/iconred.png" density="ldpi" />
+    <icon src="res/android/iconred.png" density="mdpi" />
+    <icon src="res/android/iconred.png" density="hdpi" />
+    <icon src="res/android/iconred.png" density="xhdpi" />
+    <icon src="res/android/iconred.png" density="xxhdpi" />
+    <icon src="res/android/iconred.png" density="xxxhdpi" />
   </platform>
 
 </widget>
