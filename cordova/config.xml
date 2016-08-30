@@ -20,12 +20,12 @@
     <preference name="EnableDeveloperConsole" value="false"/>
 
     <platform name="android">
-    <icon src="res/android/mipmap-ldpi/eik.png" density="ldpi" />
-    <icon src="res/android/mipmap-mdpi/eik.png" density="mdpi" />
-    <icon src="res/android/mipmap-hdpi/eik.png" density="hdpi" />
-    <icon src="res/android/mipmap-xhdpi/eik.png" density="xhdpi" />
-    <icon src="res/android/mipmap-xxhdpi/eik.png" density="xxhdpi" />
-    <icon src="res/android/mipmap-xxxhdpi/eik.png" density="xxxhdpi" />
+    <icon src="res/android/mipmap-ldpi/mp.png" density="ldpi" />
+    <icon src="res/android/mipmap-mdpi/mp.png" density="mdpi" />
+    <icon src="res/android/mipmap-hdpi/mp.png" density="hdpi" />
+    <icon src="res/android/mipmap-xhdpi/mp.png" density="xhdpi" />
+    <icon src="res/android/mipmap-xxhdpi/mp.png" density="xxhdpi" />
+    <icon src="res/android/mipmap-xxxhdpi/mp.png" density="xxxhdpi" />
   </platform>
 
 </widget>
