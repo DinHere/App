@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget
+    id="com.din.ypologismos_moriwn"
+    version="1.0.3"
+    xmlns:gap="http://phonegap.com/ns/1.0"
+    xmlns="http://www.w3.org/ns/widgets"
+    xmlns:cdv="http://cordova.apache.org/ns/1.0">
+
+    <name>Υπολογισμός Μορίων Πανελλήνιες 2016-2017</name>
+    <description>
+        Μία γρήγορη και εύκολη στην χρήση εφαρμογή
+        για τον υπολογισμό των μορίων των πανελληνίων 2016+(Νέο Σύστημα)
+    </description>
+    <author email="kitsios.konst@gmail.com" href="">
+        din
+    </author>
+
+    <access origin="*" />
+
+    <preference name="EnableDeveloperConsole" value="false"/>
+
+    <platform name="android">
+    <icon src="res/android/mipmap-ldpi/eik.png" density="ldpi" />
+    <icon src="res/android/mipmap-mdpi/eik.png" density="mdpi" />
+    <icon src="res/android/mipmap-hdpi/eik.png" density="hdpi" />
+    <icon src="res/android/mipmap-xhdpi/eik.png" density="xhdpi" />
+    <icon src="res/android/mipmap-xxhdpi/eik.png" density="xxhdpi" />
+    <icon src="res/android/mipmap-xxxhdpi/eik.png" density="xxxhdpi" />
+  </platform>
+
+</widget>
