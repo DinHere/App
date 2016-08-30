@@ -20,12 +20,12 @@
     <preference name="EnableDeveloperConsole" value="false"/>
 
     <platform name="android">
-    <icon src="res/android/eik.png" density="ldpi" />
-    <icon src="res/android/eik.png" density="mdpi" />
-    <icon src="res/android/eik.png" density="hdpi" />
-    <icon src="res/android/eik.png" density="xhdpi" />
-    <icon src="res/android/eik.png" density="xxhdpi" />
-    <icon src="res/android/eik.png" density="xxxhdpi" />
+    <icon src="res/android/eik (1).png" density="ldpi" />
+    <icon src="res/android/eik (1).png" density="mdpi" />
+    <icon src="res/android/eik (1).png" density="hdpi" />
+    <icon src="res/android/eik (1).png" density="xhdpi" />
+    <icon src="res/android/eik (1).png" density="xxhdpi" />
+    <icon src="res/android/eik (1).png" density="xxxhdpi" />
   </platform>
 
 </widget>
