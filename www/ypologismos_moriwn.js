@@ -7,8 +7,8 @@ var page = new tabris.Page({
 new tabris.TextView({
   markupEnabled:true,
   text:"<big><b>Επέλεξε τύπο Λυκείου:</big></b>",
-  layoutData:{top:30, left:50},
-  font:"20px sans-serif",
+  layoutData:{top:"8%", left:"12%"},
+  font:"20px sans-serif" ,
   textColor:"#8b0000"
 }).appendTo(page);
 
@@ -19,7 +19,7 @@ new tabris.Button({
   markupEnabled:true,
   background: "#8b0000",
   textColor: "white",
-  layoutData: {top:120, height:100, left:50, right:50},
+  layoutData: {top:"25%", height:100, left:"15%", right:"15%"},
 }).on("select",function(){
   gel_open();
 }).appendTo(page);
@@ -31,7 +31,7 @@ new tabris.Button({
   markupEnabled:true,
   background: "#8b0000",
   textColor: "white",
-  layoutData: {top:270, height:100, left:50, right:50},
+  layoutData: {top:"55%", height:100, left:"15%", right:"15%"},
 }).on("select",function(){
   epal_open();
 }).appendTo(page);
@@ -59,8 +59,7 @@ new tabris.RadioButton({
   markupEnabled:true,
   text: "Ανρθωπιστικών Σπουδών",
   textColor:"#000000",
-  selection: true
-
+  selection: true,
 }).appendTo(scrollView);
 
 new tabris.RadioButton({
@@ -77,7 +76,7 @@ new tabris.RadioButton({
 
 
 scrollView.apply({
-  "#Op": { layoutData: {left:40, top:10, right:10 }},
+  "#Op": { layoutData: {left:"10%", top:30, right:"10%" }},
   "#anthr":{ layoutData: {left:40, top: 100}},
   "#thet": { layoutData: {left:40, top: 200}},
   "#oikpl":{ layoutData: {left:40, top: 300}},
@@ -145,7 +144,7 @@ function page2_cr() {
 
 
   var comp1 = new tabris.Composite({
-    layoutData:{top: "30", right: 0, left:0, height:40,},
+    layoutData:{top: "6%", right: 0, left:0, height:40,},
     background:"#808080",
   }).appendTo(page2);
   var b11 = tabris.create("TextInput", {
@@ -265,7 +264,7 @@ function page2_cr() {
     font:"18px",
     text:"Υπολόγισε τα μόριά σου",
     textColor:"white",
-    layoutData:{top:"prev() 80",left:"10", right:"10", height:60},
+    layoutData:{top:"90%",left:"10", right:"10", height:60},
     background:"#8b0000",
     alignment:"center"
   }).on("select", function(){
@@ -294,7 +293,7 @@ function page2_cr() {
 //ελεγχοι
       if( b1===def || b2===def || b3===def) {
          message1 = new tabris.TextView({
-            layoutData:{top:400},
+            layoutData:{top:"78%"},
             markupEnabled:true,
             text:"<big><b><i>Πρέπει να βάλεις βαθμό και στα 3 υποχρεωτικά μαθήματα!</big></b></i>",
             alignment:"center",
@@ -302,7 +301,7 @@ function page2_cr() {
          }).appendTo(page2);
      }else if(b4===def && b5===def && b6===def){
        message1=new tabris.TextView({
-         layoutData:{top:400},
+         layoutData:{top:"78%"},
          markupEnabled:true,
          text:"<big><b><i>Πρέπει να επιλέξεις τουλάχιστον 1 μάθημα επιλογής!</big></b></i>",
          textColor:"#ff0000",
@@ -310,7 +309,7 @@ function page2_cr() {
        }).appendTo(page2);
      }else if(!(b4===def) && !(b5===def) && !(b6===def)){
         message1= new tabris.TextView({
-          layoutData:{top:400},
+          layoutData:{top:"78%"},
           markupEnabled:true,
           text:"<big><b><i>Μπορείς να επιλέξεις μέχρι 5 μαθήματα!</big></b></i>",
           textColor:"#ff0000",
@@ -318,7 +317,7 @@ function page2_cr() {
         }).appendTo(page2);
       }else if( b1<0 || b1>20 || b2<0 || b2>20 || b3<0 || b3>20 || b4<0 || b4>20 || b5<0 || b5>20 || b6<0 || b6> 20 ){
           message1 = new tabris.TextView({
-            layoutData:{top:400},
+            layoutData:{top:"78%"},
             markupEnabled:true,
             text:"<big><b><i>Οι βαθμοί πρέπει να είναι στην κλίμακα 0-20(π.χ. 12.8)!</big></b></i>",
             textColor:"#ff0000",
@@ -390,7 +389,7 @@ function page2_cr() {
 
         if (!(b_e1===def) && !(b_e2===def)) {
             message1 = new tabris.TextView({
-              layoutData:{top:400},
+              layoutData:{top:"78%"},
               markupEnabled:true,
               text:"<big><b><i>Μπορείς να επιλέξεις μόνο 1 ειδικό μάθημα κάθε φορά</big></b></i>",
               textColor:"#ff0000",
@@ -398,15 +397,15 @@ function page2_cr() {
             }).appendTo(page2)
         }else{
           var eid = ": ",
-              top = 400;
+              top = "78%";
 
           if(!(b_e1===def)){
-            top = 378;
+            top = "74%";
             eid = " με ειδικό μάθημα: ";
             moria1 = moria1 + b_e1*100;
             moria2 = moria2 + b_e1*100
           }else if(!(b_e2===def)){
-            top = 378;
+            top = "74%";
             eid = " με ειδικό μάθημα: ";
             moria1 = moria1 + b_e2*200;
             moria2 = moria2 + b_e2*200;
@@ -443,16 +442,16 @@ function epal_open(){
     background:"#bfbfbf",
     title:"                  ΕΠΑΛ"
   });
-  
+
   new tabris.TextView({
-    layoutData:{top:3,left:50},
+    layoutData:{top:"1%",left:"10%", right:"10%"},
     text:"Υποχρεωτικά μαθήματα(0-200):",
     textColor:"#8b0000",
     font:"18px"
   }).appendTo(epal);
-  
+
   var comp1 = new tabris.Composite({
-    layoutData:{top: "30", right: 0, left:0, height:50,},
+    layoutData:{top: "8%", right: 0, left:0, height:50,},
     background:"#a6a6a6",
   }).appendTo(epal);
   var b11 = tabris.create("TextInput", {
@@ -463,9 +462,9 @@ function epal_open(){
     keyboard:"number",
     background:"#a6a6a6",
   }).appendTo(comp1);
-  
+
   var def = b11.get("text");
-  
+
   var comp2 = new tabris.Composite({
     layoutData:{top: "prev() 0", right: 0, left:0, height:50,},
     background:"#999999",
@@ -478,7 +477,7 @@ function epal_open(){
     keyboard:"number",
     background:"#999999",
   }).appendTo(comp2);
-  
+
   var comp3 = new tabris.Composite({
     layoutData:{top: "prev() 0", right: 0, left:0, height:50,},
     background:"#a6a6a6",
@@ -491,7 +490,7 @@ function epal_open(){
     keyboard:"number",
     background:"#a6a6a6",
   }).appendTo(comp3);
-  
+
   var comp4 = new tabris.Composite({
     layoutData:{top: "prev() 0", right: 0, left:0, height:50,},
     background:"#999999",
@@ -504,14 +503,14 @@ function epal_open(){
     keyboard:"number",
     background:"#999999",
   }).appendTo(comp4);
-  
+
   new tabris.TextView({
     text:"Ειδικά μαθήματα(0-200):",
-    layoutData:{top:235,left:50},
+    layoutData:{top:"48%",left:"20%"},
     textColor:"#8b0000",
     font:"18px"
   }).appendTo(epal);
-  
+
   var comp5 = new tabris.Composite({
     layoutData:{top: "prev() 5", right: 0, left:0, height:50,},
     background:"#a6a6a6",
@@ -524,7 +523,7 @@ function epal_open(){
     keyboard:"number",
     background:"#a6a6a6",
   }).appendTo(comp5);
-  
+
   var comp6 = new tabris.Composite({
     layoutData:{top: "prev() 0", right: 0, left:0, height:50,},
     background:"#999999",
@@ -537,18 +536,18 @@ function epal_open(){
     keyboard:"number",
     background:"#999999",
   }).appendTo(comp6);
-  
+
   new tabris.Button({
     font:"18px",
     text:"Υπολόγισε τα μόριά σου",
     textColor:"white",
-    layoutData:{top:"prev() 80",left:"10", right:"10", height:60},
+    layoutData:{top:"88%",left:"10", right:"10", height:60},
     background:"#8b0000",
     alignment:"center"
   }).on("select", function(){
      ypologise();
   }).appendTo(epal);
-  
+
   var message,
       moria=0;
   function ypologise() {
@@ -559,18 +558,18 @@ function epal_open(){
         b5=b55.get("text"),
         b6=b66.get("text"),
         eid=": ",
-        left=110;
-        
+        left="30%";
+
     if(message){
       message.dispose();
     };
-       
+
 
     if(b1===def || b2===def || b3===def || b4===def){
       message = new tabris.TextView({
         markupEnabled:true,
         text:"<big><b><i>Πρέπει να βάλεις βαθμό και στα 4 υποχρεωτικά μαθήματα!</big></b></i>",
-        layoutData:{top:390},
+        layoutData:{top:"77%"},
         alignment:"center",
         textColor:"#ff0000"
       }).appendTo(epal);
@@ -578,7 +577,7 @@ function epal_open(){
 	 message=new tabris.TextView({
         markupEnabled:true,
         text:"<big><b><i>Οι βαθμοί πρέπει να είναι στην κλίμακα 0-200(π.χ.168)</big></b></i>",
-        layoutData:{top:390},
+        layoutData:{top:"77%"},
         alignment:"center",
         textColor:"#ff0000"
       }).appendTo(epal);
@@ -586,32 +585,32 @@ function epal_open(){
         message = new tabris.TextView({
           markupEnabled:true,
           text:"<big><b><i>Επέλεξε 1 μάθημα επιλογής την φορά</big></b></i>",
-          layoutData:{top:390,left:32},
+          layoutData:{top:"78%",left:"7%"},
           textColor:"#ff0000"
         }).appendTo(epal);
-      
+
     }else{
-      
+
 	  moria = b1*3/2 + b2*3/2 + b3*7/2 + b4*7/2;
       if(!(b5===def)){
         eid = " με ειδικό μάθημα: ";
         moria = moria + b5*2;
-        left=10
+        left="5%"
       }else if(!(b6===def)){
-        eid = " με ειδικό μάθημα: ";
+        eid = " με ειδικό μάθημα :";
         moria = moria + b6*2;
-        left=10;
+        left="5%";
       };
-      
+
       message = new tabris.TextView({
         text:"Μόρια"+ eid + moria,
-        layoutData:{top:390, left:left},
+        layoutData:{top:"77%", left:left},
         alignment:"center",
         textColor:"#8b0000",
         font: "24px sans-serif",
       }).appendTo(epal);
     };
-    
+
   };
  epal.open();
 };
