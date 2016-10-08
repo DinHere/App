@@ -334,7 +334,7 @@ function page2_cr() {
             }else if(b6===def){
               a = x.ped_B ;
               if(op=="thet"){
-                moria1 = b1*200 + b2*270 + b3*200 + b5*330;
+                moria1 = b1*200 + b2*270 + b3*200 + b5*290;
               }else{
               	moria1 = b1*200 + b2*200 + b3*240 + b5*290;
               };
@@ -343,7 +343,7 @@ function page2_cr() {
               b = x.ped_G;
               moria2 = b1*200 + b2*200 + b3*330 + b6*270;
               if(op=="thet"){
-                moria1 = b1*200 + b2*270 + b3*200 + b5*330;
+                moria1 = b1*200 + b2*270 + b3*200 + b5*290;
               }else{
                 moria1 = b1*200 + b2*200 + b3*240 + b5*290;
               }
@@ -383,7 +383,7 @@ function page2_cr() {
                 moria2 = b1*200 + b2*200 + b3*240 + b5*290;
               }else{
                 moria1 = b1*270 + b2*200 + b3*200 + b4*330
-                moria2 = b1*200 + b2*270 + b3*200 + b5*330;
+                moria2 = b1*200 + b2*270 + b3*200 + b5*290;
               };
           };
 
