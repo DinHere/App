@@ -134,7 +134,7 @@ function page2_cr() {
      //page2
 
   new tabris.TextView({
-    layoutData: {left: 10, top: "prev() 5", right: 10},
+    layoutData: {left: 10, top:"1%", right: 10,bottom:"95%"},
     markupEnabled: true,
     text: "Υποχρεωτικά μαθήματα:",
     alignment: "center",
@@ -144,7 +144,7 @@ function page2_cr() {
 
 
   var comp1 = new tabris.Composite({
-    layoutData:{top: "6%", right: 0, left:0, height:40,},
+    layoutData:{top: "6%", right: 0, left:0, bottom:"86%"},
     background:"#808080",
   }).appendTo(page2);
   var b11 = tabris.create("TextInput", {
@@ -159,7 +159,7 @@ function page2_cr() {
   var def=b11.get("text");
 
   var comp2 = new tabris.Composite({
-    layoutData:{top:[comp1,-5],left:0,right:0,height:40},
+    layoutData:{top:"13%",left:0,right:0,bottom:"79%"},
     background:"#8c8c8c"
   }).appendTo(page2);
   var b22 = tabris.create("TextInput", {
@@ -171,7 +171,7 @@ function page2_cr() {
   }).appendTo(comp2);
 
   var comp3 = new tabris.Composite({
-    layoutData:{top:[comp2,-5],left:0,right:0, height:40},
+    layoutData:{top:"20%",left:0,right:0, bottom:"72%"},
     background:"#999999"
   }).appendTo(page2);
   var b33 = tabris.create("TextInput", {
@@ -183,7 +183,7 @@ function page2_cr() {
   }).appendTo(comp3);
 
   new tabris.TextView({
-    layoutData: {left: 10, top: "prev() 3", right:10 },
+    layoutData: {left: 10, top:"29%", right:10,bottom:"67%" },
     markupEnabled:true,
     text: "Μαθήματα επιλογής(επέλεξε 1 ή 2):",
     alignment: "center",
@@ -192,7 +192,7 @@ function page2_cr() {
   }).appendTo(page2);
 
   var comp4 = new tabris.Composite({
-    layoutData:{top:"prev() 3", left:0, right:0, height:40},
+    layoutData:{top:"34%", left:0, right:0, bottom:"58%"},
     background:"#808080"
   }).appendTo(page2);
   var b44 = tabris.create("TextInput", {
@@ -204,7 +204,7 @@ function page2_cr() {
   }).appendTo(comp4);
 
   var comp5 = new tabris.Composite({
-    layoutData:{top:[comp4, -5], left:0, right:0,height:40},
+    layoutData:{top:"41%", left:0, right:0,bottom:"51%"},
     background:"#8c8c8c"
   }).appendTo(page2);
   var b55 = tabris.create("TextInput", {
@@ -216,7 +216,7 @@ function page2_cr() {
   }).appendTo(comp5);
 
   var comp6 = new tabris.Composite({
-    layoutData:{top:[comp5,-5], left:0, right:0,height:40},
+    layoutData:{top:"48%", left:0, right:0,bottom:"44%"},
     background:"#999999"
   }).appendTo(page2);
   var b66 = tabris.create("TextInput", {
@@ -228,7 +228,7 @@ function page2_cr() {
   }).appendTo(comp6);
 
   new tabris.TextView({
-    layoutData:{top:"prev() 3", left:10, right:10},
+    layoutData:{top:"57%", left:10, right:10,bottom:"39%"},
     text:"Ειδικό μάθημα(προαιρετικό):",
     textColor:"#8b0000",
     font:"16px",
@@ -236,7 +236,7 @@ function page2_cr() {
   }).appendTo(page2);
 
   var comp_e1 = new tabris.Composite({
-    layoutData:{top:"prev() 3", left:0,right:0, height:40},
+    layoutData:{top:"62%", left:0,right:0, bottom:"30%"},
     background:"#a19f91"
   }).appendTo(page2)
   var b_e11 = new tabris.TextInput({
@@ -248,7 +248,7 @@ function page2_cr() {
   }).appendTo(comp_e1);
 
   var comp_e2 = new tabris.Composite({
-    layoutData:{top:"prev() -5", left:0, right:0, height:40},
+    layoutData:{top:"69%", left:0, right:0, bottom:"23%"},
     background:"#adab9f"
   }).appendTo(page2)
   var b_e22 = new tabris.TextInput({
@@ -264,7 +264,7 @@ function page2_cr() {
     font:"18px",
     text:"Υπολόγισε τα μόριά σου",
     textColor:"white",
-    layoutData:{top:"90%",left:"10", right:"10", height:60},
+    layoutData:{top:"90%",left:"10", right:"10", bottom:"1%"},
     background:"#8b0000",
     alignment:"center"
   }).on("select", function(){
